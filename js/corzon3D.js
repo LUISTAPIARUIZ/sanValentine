@@ -16,7 +16,7 @@ for (let i = 0; i < profundidadZ; i += 12) {
     let imagen = document.createElement("img");
 
     // Establecer la ruta de la imagen
-    imagen.src = "../img/corazonKatty.svg"; // Reemplaza con la ruta de tu imagen
+    imagen.src = "./img/corazonKatty.svg"; // Reemplaza con la ruta de tu imagen
 
     if(i <= profundidadZ / 2){
         let nuevoValorAncho =profundidadZ/2- i-10
