@@ -20,15 +20,16 @@ for (let i = 0; i < profundidadZ; i += 12) {
 
     if(i <= profundidadZ / 2){
         let nuevoValorAncho =profundidadZ/2- i-10
-        imagen.style.transform = "translateZ(" + -i + "px)";
+        let nuevoValorProfundidad =-i +i/2
+        imagen.style.transform = "translateZ(" + nuevoValorProfundidad  + "px)";
         imagen.style.width = nuevoValorAncho + "px";
         // Añadir la imagen al contenedor
         contenedor.appendChild(imagen);
 
     }else{
         let nuevoValorAncho =profundidadZ- i
-        let nuevoValorZ =i-250
-        imagen.style.transform = "translateZ(" +nuevoValorZ + "px)";
+        let nuevoValorProfundidad =(i -i/2)-120  
+        imagen.style.transform = "translateZ(" +nuevoValorProfundidad + "px)";
         imagen.style.width = nuevoValorAncho + "px";
         // Añadir la imagen al contenedor
         contenedor.insertBefore(imagen, contenedor.firstChild);
